@@ -1,0 +1,58 @@
+$mainColor: #f0412a; // A red color similar to the logo's fire element
+$secondaryColor: #f0f0f0; // A dark grey for text, matching the 'CLEANING & RESTORATION' text in the logo
+
+nav {
+  overflow-x: hidden;
+  padding: 1.5rem 0;
+  background-color: #fdfcfc; // White background to match the logo's background
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // subtle shadow for depth
+
+  .logo img {
+    max-height: 5rem; // Adjust size to match your logo's display
+  }
+
+  .menu ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+
+    li {
+      margin-right: 1rem;
+      a {
+        color: $secondaryColor;
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+        &:hover {
+          color: $mainColor;
+        }
+        &:after {
+          content: "";
+          display: block;
+          margin-top: 0.5rem;
+          width: 0;
+          height: 2px;
+          background-color: $mainColor;
+          transition: width 0.4s;
+        }
+        &:hover:after {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .mobile-menu-icon {
+    svg {
+      color: $secondaryColor; // Ensuring visibility
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+  .mobile-menu-icon {
+    display: block;
+  }
+}

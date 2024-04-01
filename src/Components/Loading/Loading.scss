@@ -1,0 +1,64 @@
+// Define the animation for the flames
+@keyframes rise {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-20px) scale(2);
+    opacity: 0;
+  }
+}
+
+// Define the animation for flickering
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  100% {
+    transform: scaleY(1) scaleX(1);
+  }
+  20% {
+    transform: scaleY(1.1) scaleX(0.9);
+  }
+}
+
+.loading-fire-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  .fire {
+    width: 8px;
+    height: 30px;
+    background: linear-gradient(180deg, #fdcf58 0%, #757676 100%);
+    border-radius: 50%;
+    position: relative;
+    animation: rise 4s infinite ease-in-out, flicker 0.2s infinite ease-in-out;
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      background: linear-gradient(180deg, #ff9d2f 0%, #ff6126 100%);
+      border-radius: 50%;
+    }
+
+    &:before {
+      width: 10px;
+      height: 40px;
+      left: -15px;
+      animation: rise 3s infinite ease-in-out 1s,
+        flicker 0.25s infinite ease-in-out;
+    }
+
+    &:after {
+      width: 10px;
+      height: 40px;
+      right: -15px;
+      animation: rise 3.5s infinite ease-in-out 0.5s,
+        flicker 0.3s infinite ease-in-out;
+    }
+  }
+}

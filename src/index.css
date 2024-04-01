@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #292828;
+  /* Updated to a sleek, modern gray */
+
+  /* Text color updated to white for contrast */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+  background-color: #383838;
+  /* Slightly lighter gray for code blocks */
+  color: #f0412a;
+  /* Keeping the red color for code to tie it into your theme */
+  padding: 0.5em;
+  /* Adding padding for readability */
+  border-radius: 4px;
+  /* Softening edges with a border-radius */
+}
