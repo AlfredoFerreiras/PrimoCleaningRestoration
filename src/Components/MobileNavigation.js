@@ -37,11 +37,11 @@ function MobileNavigation(props) {
           </li>
           <li>
             <Link
-              to="/portfolio"
+              to="/services"
               exact
               activeClassName="active"
               onClick={() => props.closeMobileMenu()}>
-              Portfolio
+              Services
             </Link>
           </li>
           <li>
@@ -51,15 +51,6 @@ function MobileNavigation(props) {
               activeClassName="active"
               onClick={() => props.closeMobileMenu()}>
               Contact
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/rental"
-              exact
-              activeClassName="active"
-              onClick={() => props.closeMobileMenu()}>
-              Rental
             </Link>
           </li>
         </ul>
