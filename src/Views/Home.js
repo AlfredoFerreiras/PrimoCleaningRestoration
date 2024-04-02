@@ -15,12 +15,6 @@ import {
 
 //Components
 import Carousel from "../Components/Carousel";
-import PortfolioSlider from "../Components/PortfolioSlider";
-
-//Certificate paths
-import ISO9001 from "../Img/Certificates/iso9001.jpg";
-import ISO14001 from "../Img/Certificates/iso14001.jpg";
-import ISO18001 from "../Img/Certificates/iso18001.jpg";
 
 //SVG icons
 import Dots from "../Icons/Dots";

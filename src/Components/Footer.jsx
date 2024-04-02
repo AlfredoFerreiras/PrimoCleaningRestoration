@@ -1,15 +1,9 @@
 import React from "react";
-
-import { Link } from "react-router-dom";
-
 //Styles
 import "./Footer.scss";
-
-//Icons
-import BackToTop from "../Icons/BackToTop";
 import { Typography } from "@material-tailwind/react";
 
-function Footer(props) {
+function Footer() {
   const LINKS = [
     {
       title: "Company",
