@@ -44,7 +44,7 @@ function Home(props) {
                 of our customers.
               </p>
 
-              <div className="showMore">
+              <div className="showMore text-white">
                 <Link to="/about">
                   Show More{" "}
                   <span>

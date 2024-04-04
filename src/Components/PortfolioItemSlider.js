@@ -1,25 +1,15 @@
 import React from "react";
-
 // Slick Slider
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-
-// Slider image
-import img4018 from "../Img/Slider-Portfolio/IMG_4018.png";
-import img4024 from "../Img/Slider-Portfolio/IMG_4024.png";
-import img4025 from "../Img/Slider-Portfolio/IMG_4025.png";
-import img4026 from "../Img/Slider-Portfolio/IMG_4026.png";
-import img4027 from "../Img/Slider-Portfolio/IMG_4027.png";
-import img4028 from "../Img/Slider-Portfolio/IMG_4028.png";
 // Arrows
 import Next from "../Icons/Next";
 import Prev from "../Icons/Prev";
-
 // Styles
 import "./PortfolioItemSlider.scss";
-
-const images = [img4018, img4024, img4025, img4026, img4027, img4028];
+// Importing IMAGE_DATA
+import IMAGE_DATA from "../Img/Slider-Portfolio/LINKS/IMAGE";
 
 function PortfolioItemSlider() {
   // Custom arrows
@@ -81,10 +71,10 @@ function PortfolioItemSlider() {
   return (
     <div className="portfolioItemSlider">
       <Slider {...settings}>
-        {images.map((image, index) => (
+        {IMAGE_DATA[0].items.map((item, index) => (
           <div key={index} className="slide">
             <div className="image">
-              <img src={image} alt={`portfolio-item-${index}`} />
+              <img src={item.imageUrl} alt={item.name} />
             </div>
           </div>
         ))}
