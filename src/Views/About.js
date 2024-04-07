@@ -31,33 +31,27 @@ function About() {
           </h2>
 
           <div className="container-inner text-white">
-            <h4>Primo is a company specializing in Fire Restoration</h4>
-
+            <h4>
+              Primo is a company specializing in Fire Restoration & Cleaning
+            </h4>
+            <br />
             <div className="text text-white">
               <p>
-                Primo was founded in 2004. Since its inception, we have
-                undertaken dozens of construction projects of various kinds. Our
-                goal in all our activities is to fully satisfy the requirements
-                and needs of our customers.
+                We are a family-owned company that has been in business since
+                2020 with 18 plus years of experience in the fire, cleaning and
+                restoration business. Being a small business, we understand the
+                concern for not only your property but the wellbeing of those
+                affected directly.{" "}
               </p>
-
+              <br />
               <p>
-                In all our company activities, we take measures to limit waste
-                generation and apply environmentally friendly and
-                energy-efficient technological procedures. We communicate and
-                cooperate with public authorities and other stakeholders on
-                environmental and occupational health and safety issues.
+                Our priority is to provide exceptional service restoring your
+                property and making sure everything is safe and well upon
+                returning to your home. We are committed to threat our customers
+                exactly how we would want to be treated, anything less would be
+                unacceptable.
               </p>
-
-              <p>
-                We always strive to ensure that all our activities comply with
-                ISO and national standards requirements. For all specialized
-                activities, we possess the necessary certificates,
-                authorizations, and qualifications. In preparing construction
-                projects, we proceed in such a way that all risks and hazards
-                are identified in advance, and we implement measures to prevent
-                endangering the health of our employees.
-              </p>
+              <p></p>
             </div>
           </div>
 
@@ -69,37 +63,60 @@ function About() {
           <h2>
             What We Do <Dots />
           </h2>
-
+          <h3> Water Damage & Fire Restoration</h3>
           <div className="container-inner">
             <div className="card-container">
               <div className="card">
                 <Building />
-                <p>Construction and reconstruction of buildings</p>
-              </div>
-
-              <div className="card">
-                <Excavator />
-                <p>Preparation, earthworks, and demolition</p>
-              </div>
-
-              <div className="card">
-                <Wrench />
-                <p>Repair and restoration of engineering structures</p>
-              </div>
-
-              <div className="card">
-                <Painter />
-                <p>Hydro insulation coatings</p>
+                <p>Dehumidification</p>
               </div>
 
               <div className="card">
                 <Spray />
-                <p>Graffiti removal and anti-graffiti coatings</p>
+                <p>Cleaning & Disinfection</p>
               </div>
 
               <div className="card">
                 <Shield />
-                <p>Comprehensive anti-corrosion protection</p>
+                <p>Water Extraction</p>
+              </div>
+
+              <div className="card">
+                <Painter />
+                <p>Water Damage Clean-Up</p>
+              </div>
+            </div>
+          </div>
+
+          <Square />
+          <Circle />
+        </div>
+
+        <div className="whatWeDo section text-white">
+          <h2>
+            What We Do <Dots />
+          </h2>
+          <h3> Emergency Services 24/7</h3>
+          <div className="container-inner">
+            <div className="card-container">
+              <div className="card">
+                <Building />
+                <p>Soot & Smoke removal</p>
+              </div>
+
+              <div className="card">
+                <Excavator />
+                <p>Pack-out/in And Storage</p>
+              </div>
+
+              <div className="card">
+                <Wrench />
+                <p>Secure Board-Up</p>
+              </div>
+
+              <div className="card">
+                <Painter />
+                <p>Structural Drying</p>
               </div>
             </div>
           </div>
