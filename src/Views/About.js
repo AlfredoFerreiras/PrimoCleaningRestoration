@@ -41,7 +41,7 @@ function About() {
                 2020 with 18 plus years of experience in the fire, cleaning and
                 restoration business. Being a small business, we understand the
                 concern for not only your property but the wellbeing of those
-                affected directly.{" "}
+                affected directly.
               </p>
               <br />
               <p>

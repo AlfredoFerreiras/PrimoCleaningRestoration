@@ -38,10 +38,13 @@ function Home(props) {
             <h4>Primo Construction Services</h4>
             <div className="text text-white">
               <p>
-                Primo Construction Services was founded in 2004. Since then, we
-                have completed dozens of construction projects of various types.
-                Our goal is always to fully satisfy the requirements and needs
-                of our customers.
+                We're dedicated to offering top-notch service to restore your
+                property safely and efficiently. As a family-owned business
+                started in 2020, we bring over 18 years of experience in fire,
+                cleaning, and restoration services. We treat our customers with
+                the care and respect we'd want for ourselves—anything less isn't
+                an option. We know the importance of not just fixing properties,
+                but also supporting the people impacted.
               </p>
 
               <div className="showMore text-white">
@@ -164,9 +167,10 @@ function Home(props) {
                     <FontAwesomeIcon icon={faMapMarkerAlt} />
                     <h4>Where We Are</h4>
                   </div>
-
-                  <p>Brooklyn</p>
-                  <p>New York, 11204</p>
+                  <div class="space-y-2">
+                    <p class="text-base font-medium">Brooklyn</p>
+                    <p class="text-base">New York, 11204</p>
+                  </div>
                 </div>
 
                 <div className="column">
@@ -174,8 +178,12 @@ function Home(props) {
                     <FontAwesomeIcon icon={faPhoneAlt} />
                     <h4>Contact</h4>
                   </div>
-                  <p>0900 000 000</p>
-                  <p>email@primoconstruction.com</p>
+                  <div class="space-y-2">
+                    <p class="text-base font-medium">718-455-0353</p>
+                    <p class="text-base">
+                      primocleaningandrestoration@gmail.com
+                    </p>
+                  </div>
                 </div>
 
                 <div className="column">
@@ -183,8 +191,11 @@ function Home(props) {
                     <FontAwesomeIcon icon={faClock} />
                     <h4>Working Hours</h4>
                   </div>
-                  <p>Monday - Friday</p>
-                  <p>8:00 AM - 6:00 PM</p>
+                  <div class="space-y-4">
+                    <p class="text-base font-semibold text-orange-500">
+                      24/7 Service Available
+                    </p>
+                  </div>
                 </div>
               </div>
 
