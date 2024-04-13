@@ -1,5 +1,5 @@
-import React from "react";
-
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 //Styles
 import "./Contact.scss";
 
@@ -20,6 +20,32 @@ import Dots from "../Icons/Dots";
 import Square from "../Icons/Square";
 
 function Contact() {
+  const [from_name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_cxuy6jt", "template_70chkr8", form.current, {
+        publicKey: "m6wNlk1n8sZlR00PJ",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+
+    setName("");
+    setEmail("");
+    setMessage("");
+  };
+
   return (
     <div className="contactView">
       <div className="container">
@@ -60,15 +86,41 @@ function Contact() {
               </div>
 
               <div className="form">
-                <form>
-                  <input type="text" placeholder="Name" />
-                  <input type="email" placeholder="Email" />
-
-                  <textarea placeholder="Message"></textarea>
+                <form ref={form} onSubmit={sendEmail}>
+                  <label>Name</label>
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    value={from_name}
+                    name="from_name"
+                    required="required"
+                    id="name"
+                    onChange={(e) => setName(e.target.value)}
+                  />
+                  <label>Email</label>
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    value={email}
+                    name="from_email"
+                    required="required"
+                    id="email"
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
+                  <label>Message</label>
+                  <textarea
+                    placeholder="Message"
+                    value={message}
+                    name="message"
+                    required="required"
+                    id="message"
+                    onChange={(e) => setMessage(e.target.value)}
+                  />
 
                   <div className="send">
-                    <FontAwesomeIcon icon={faPaperPlane} />
-                    <Link to="">Send</Link>
+                    <button type="submit">
+                      <FontAwesomeIcon icon={faPaperPlane} /> Send
+                    </button>
                   </div>
                 </form>
               </div>

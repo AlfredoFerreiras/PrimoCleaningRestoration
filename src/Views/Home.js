@@ -19,7 +19,7 @@ import Carousel from "../Components/Carousel";
 //SVG icons
 import Dots from "../Icons/Dots";
 import Square from "../Icons/Square";
-import Circle from "../Icons/Circle";
+
 import { Link } from "react-router-dom";
 import PortfolioItemSlider from "../Components/PortfolioItemSlider";
 
@@ -130,7 +130,7 @@ function Home(props) {
 
         <div className="portfolio section text-white">
           <h2>
-            Portfolio <Dots />
+            Services <Dots />
           </h2>
 
           <div className="container-inner">
@@ -142,7 +142,7 @@ function Home(props) {
         </div>
       </div>
 
-      <div className="allWorks">
+      {/* <div className="allWorks">
         <Circle />
 
         <div className="container">
@@ -151,71 +151,17 @@ function Home(props) {
             View All Services
           </Link>
         </div>
-      </div>
+      </div> */}
 
-      <div className="contact section">
+      {/* <div className="contact section">
         <div className="container text-white">
           <h2>
             Contact Primo <Dots />
           </h2>
 
-          <div className="container-inner">
-            <div className="wrapper">
-              <div className="info">
-                <div className="column">
-                  <div className="heading">
-                    <FontAwesomeIcon icon={faMapMarkerAlt} />
-                    <h4>Where We Are</h4>
-                  </div>
-                  <div class="space-y-2">
-                    <p class="text-base font-medium">Brooklyn</p>
-                    <p class="text-base">New York, 11204</p>
-                  </div>
-                </div>
-
-                <div className="column">
-                  <div className="heading">
-                    <FontAwesomeIcon icon={faPhoneAlt} />
-                    <h4>Contact</h4>
-                  </div>
-                  <div class="space-y-2">
-                    <p class="text-base font-medium">718-455-0353</p>
-                    <p class="text-base">
-                      primocleaningandrestoration@gmail.com
-                    </p>
-                  </div>
-                </div>
-
-                <div className="column">
-                  <div className="heading">
-                    <FontAwesomeIcon icon={faClock} />
-                    <h4>Working Hours</h4>
-                  </div>
-                  <div class="space-y-4">
-                    <p class="text-base font-semibold text-orange-500">
-                      24/7 Service Available
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="form">
-                <form>
-                  <input type="text" placeholder="Name" />
-                  <input type="email" placeholder="Email" />
-
-                  <textarea placeholder="Message"></textarea>
-
-                  <div className="send">
-                    <FontAwesomeIcon icon={faPaperPlane} />
-                    <Link to="">Send</Link>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
+          <Contact />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
